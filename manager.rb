@@ -46,7 +46,7 @@ class Manager < Employee
   end 
   
   def show_active_employee
-    @employees.each {|employee| puts employee.active }
+    @employees.each {|employee| puts "#{employee.active}, #{employee.first_name} #{employee.last_name}" }
   end 
 
 end
